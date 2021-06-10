@@ -36,7 +36,7 @@ steps:
 
 # Convert cucumber test report to junit
 - script: |
-    json_to_junit $(System.DefaultWorkingDirectory)/test-report.json $(System.DefaultWorkingDirectory)/junit.xml
+    json_to_junit $(System.DefaultWorkingDirectory)/cucumber.json $(System.DefaultWorkingDirectory)/junit.xml
 
 # Publish all test results
 - task: PublishTestResults@2
